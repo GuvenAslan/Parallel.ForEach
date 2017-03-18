@@ -4,3 +4,9 @@ D:\PROJELER\CodeProject\Parallel.Foreach\Parallel.ForEach\Parallel.ForEach\Paral
 D:\PROJELER\CodeProject\Parallel.Foreach\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\obj\Debug\Parallel.ForEach.csprojResolveAssemblyReference.cache
 D:\PROJELER\CodeProject\Parallel.Foreach\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\obj\Debug\Parallel.ForEach.exe
 D:\PROJELER\CodeProject\Parallel.Foreach\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\obj\Debug\Parallel.ForEach.pdb
+D:\Projeler\github\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\bin\Debug\Parallel.ForEach.exe.config
+D:\Projeler\github\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\bin\Debug\Parallel.ForEach.exe
+D:\Projeler\github\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\bin\Debug\Parallel.ForEach.pdb
+D:\Projeler\github\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\obj\Debug\Parallel.ForEach.csprojResolveAssemblyReference.cache
+D:\Projeler\github\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\obj\Debug\Parallel.ForEach.exe
+D:\Projeler\github\Parallel.ForEach\Parallel.ForEach\Parallel.ForEach\obj\Debug\Parallel.ForEach.pdb

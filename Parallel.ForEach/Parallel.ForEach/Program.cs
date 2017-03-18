@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Parallel.ForEach
 {
@@ -18,31 +16,35 @@ namespace Parallel.ForEach
         public string Name { get; set; }
     }
 
-
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            List<User> _userList = new List<User>();
-            List<City> _cityList = new List<City>();
-            for (int i = 0; i < 50; i++)
-            {
-                _userList.Add(new User
-                {
-                    UserID = i,
-                    Name = i.ToString() + ". Name"
-                });
-                _cityList.Add(new City
-                {
-                    UserID = i,
-                    Name = i.ToString() + ". Name"
-                });
-            }
-            System.Threading.Tasks.Parallel.ForEach(_userList, (currentFile) =>
-            {
-                Console.WriteLine(currentFile.Name + ", " + _cityList.Where(x => x.UserID == currentFile.UserID).FirstOrDefault().Name);
-            });
+            List<User> _users = FillUsers();
+            List<City> _cities = FillCities();
+            RunForeach(_users, _cities);
             Console.ReadKey();
         }
+
+        public static bool RunForeach(List<User> _users, List<City> _cities)
+        {
+            System.Threading.Tasks.Parallel.ForEach(_users, (currentFile) => Console.WriteLine(currentFile.Name + ", " + _cities.FirstOrDefault(x => x.UserID == currentFile.UserID).Name));
+            return true;
+        }
+        public static List<User> FillUsers()
+        {
+            var _users = new List<User>();
+            for (int i = 0; i < 50; i++)
+                _users.Add(new User { UserID = i, Name = i.ToString() + ". Name" });
+            return _users;
+        }
+        public static List<City> FillCities()
+        {
+            var _cities = new List<City>();
+            for (int i = 0; i < 50; i++)
+                _cities.Add(new City { UserID = i, Name = i.ToString() + ". Name" });
+            return _cities;
+        }
     }
+
 }
